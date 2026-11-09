@@ -1,0 +1,23 @@
+{
+  "name": "property-record-cleanup-sweep",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx src/cleanup_service.ts",
+    "cleanup": "tsx src/cleanup_service.ts cleanup",
+    "schedule": "tsx src/cleanup_service.ts schedule",
+    "test": "tsx --test test/property_sweep.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.0.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.8.0"
+  }
+}

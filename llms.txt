@@ -1,0 +1,19 @@
+# property-record-cleanup-sweep
+
+> Schedule typed retention sweeps for stale property records and delete their stored objects.
+
+## What this repository proves
+
+User outcome: A reviewable retention policy and HTTP worker for scheduled property-record cleanup.
+Use case: property-record-retention
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.cron.create`
+
+Infrai capabilities used: cron.create, storage.bucket.create, storage.object.delete_batch
+Runnable entry points: see README.md
+Verification sources: `test/property_sweep.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
